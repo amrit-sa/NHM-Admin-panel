@@ -128,25 +128,25 @@ const Home = (props) => {
                   <li>
                     <div className=" d-flex card-body Card_css ">
                       <img src="images/home_iconb.png" className="rounded float-start" alt="..." style={{ width: '40px' }} />
-                      <h6 className="card-title level-2 rectangle">DPO<span>{` (${usersCount.cdpoCount})`}</span></h6>
+                      <h6 className="card-title level-2 rectangle">THV<span>{` (${usersCount.cdpoCount})`}</span></h6>
                     </div>
                     </li>
                     <li>
                     <div className=" d-flex card-body Card_css ">
                       <img src="images/home_iconb.png" className="rounded float-start" alt="..." style={{ width: '40px' }} />
-                      <h6 className="card-title level-2 rectangle">CDPO<span>{` (${usersCount.cdpoCount})`}</span></h6>
+                      <h6 className="card-title level-2 rectangle">FHS<span>{` (${usersCount.cdpoCount})`}</span></h6>
                     </div>
                   </li>
                   <li>
                     <div className=" d-flex card-body Card_css ">
                       <img src="images/home_iconb.png" className="rounded float-start" alt="..." style={{ width: '40px' }} />
-                      <h6 className="card-title level-2 rectangle">MS<span>{` (${usersCount.msCount})`}</span></h6>
+                      <h6 className="card-title level-2 rectangle">ANM<span>{` (${usersCount.msCount})`}</span></h6>
                     </div>
                     </li>
                     <li>
                     <div className=" d-flex card-body Card_css ">
                       <img src="images/home_iconb.png" className="rounded float-start" alt="..." style={{ width: '40px' }} />
-                      <h6 className="card-title level-2 rectangle">AWW<span>{` (${usersCount.awwCount})`}</span></h6>
+                      <h6 className="card-title level-2 rectangle">ASHA-F<span>{` (${usersCount.awwCount})`}</span></h6>
                     </div>
                   </li>
                 </ol>
@@ -164,19 +164,19 @@ const Home = (props) => {
                   <li>
                     <div className=" d-flex card-body Card_css ">
                       <img src="images/home_iconb.png" className="rounded float-start" alt="..." style={{ width: '40px' }} />
-                      <h6 className="card-title level-2 rectangle">CDPO<span>{` (${usersCount.cdpoCount})`}</span></h6>
+                      <h6 className="card-title level-2 rectangle">THV<span>{` (${usersCount.cdpoCount})`}</span></h6>
                     </div>
                   </li>
                   <li>
                     <div className=" d-flex card-body Card_css ">
                       <img src="images/home_iconb.png" className="rounded float-start" alt="..." style={{ width: '40px' }} />
-                      <h6 className="card-title level-2 rectangle">DPO<span>{` (${usersCount.dpoCount})`}</span></h6>
+                      <h6 className="card-title level-2 rectangle">FHS<span>{` (${usersCount.dpoCount})`}</span></h6>
                     </div>
                   </li>
                   <li>
                     <div className=" d-flex card-body Card_css ">
                       <img src="images/home_iconb.png" className="rounded float-start" alt="..." style={{ width: '40px' }} />
-                      <h6 className="card-title level-2 rectangle">State<span>{` (${usersCount.stateUserCount})`}</span></h6>
+                      <h6 className="card-title level-2 rectangle">ANM<span>{` (${usersCount.stateUserCount})`}</span></h6>
                     </div>
                   </li>
                 </ol>
