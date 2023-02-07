@@ -3,10 +3,8 @@ import { connect } from 'react-redux'
 import Form from 'react-bootstrap/Form';
 import UserModal from '../components/models/user-modal';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getDistricts, getSectors } from '../actions/area';
+import { getDistricts } from '../actions/area';
 import { getAllUsers, getAWWUsers, getDashboardUsers, getUserCount } from '../actions/user';
-import CdpoTable from '../components/tables/cdpo_table';
-import MsTable from '../components/tables/ms_table';
 import DashboardUserTable from '../components/tables/DashboardUserTable';
 import AdminTable from '../components/tables/admin_table';
 import BulkUpload from '../components/models/bulk-upload';
@@ -17,10 +15,9 @@ import logo from '../icons/appUser.png';
 import dashboard_logo from '../icons/dashboard_icon.png';
 import admin_logo from '../icons/home_icon1.png';
 import { useTranslation } from 'react-i18next'
-import { getGhataks } from '../actions/projects';
 import editIcon from '../icons/edit.png';
-import Modal from 'react-bootstrap/Modal';
 import FilterModalComponent from '../components/models/filter-Modal';
+import AppUserTable from '../components/tables/app_user_table';
 
 const Users = (props) => {
   const { t } = useTranslation();
@@ -355,10 +352,10 @@ const Users = (props) => {
                   >
                     <option disabled>{t('select_user_type')}</option>
                     {/* <option value="All">{t('all')}</option> */}
-                    <option value="DPO">{t('dpo')}</option>
-                    <option value="CDPO">{t('cdpo')}</option>
-                    <option value="MS">{t('ms')}</option>
-                    <option value="AWW">{t('aww')}</option>
+                    <option value="DPO">{t('thv')}</option>
+                    <option value="CDPO">{t('fhs')}</option>
+                    <option value="MS">{t('anm')}</option>
+                    <option value="AWW">{t('asha-f')}</option>
                   </select>
 
                 }
@@ -367,10 +364,10 @@ const Users = (props) => {
 
                   <select className="custom-select" aria-label="Default select example" value={userType} onChange={(e) => changeUserType(e.target.value)}>
                     <option disabled>{t('select_user_type')}</option>
-                    <option value="All">{t('all')}</option>
-                    <option value="DPO">{t('dpo')}</option>
-                    <option value="CDPO">{t('cdpo')}</option>
-                    <option value="STATE">{t('state')}</option>
+                    <option value="All">{t('thv')}</option>
+                    <option value="DPO">{t('fhs')}</option>
+                    <option value="CDPO">{t('anm')}</option>
+                    <option value="STATE">{t('asha-f')}</option>
                   </select>
 
                 }
@@ -389,7 +386,7 @@ const Users = (props) => {
 
           <div className='py-0 sub-wrapper'>
             {userCat === 'App' &&
-              <CdpoTable
+              <AppUserTable
                 userlist={userlist}
                 openBulkModal={openBulkModal}
                 handleShow={handleShow}
