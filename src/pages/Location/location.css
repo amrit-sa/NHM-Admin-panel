@@ -1,0 +1,47 @@
+
+
+.loc-wrapper{
+    background-color: #d98c3a;
+    color: white;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+.loc-arrow{
+    font-size: 27px;
+    color: #2c2c2c;
+}
+
+.loc-item-active .parallelogram, .loc-item-active .parallelogram2{
+    background-color: green;
+}
+
+.loc-item-inactive .parallelogram , .loc-item-inactive .parallelogram2{
+    background-color: gray;
+}
+
+.big-arrow-wrapper{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.parallelogram {
+	width: 90px;
+    height: 22px;
+    transform: skew(35deg);
+}
+
+.parallelogram2 {
+    width: 90px;
+    height: 22px;
+    transform: skew(-35deg);
+}
+
+
+.loc-label{
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    margin-left: 20px;
+}

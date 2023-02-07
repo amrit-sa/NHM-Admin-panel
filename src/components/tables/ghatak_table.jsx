@@ -9,7 +9,7 @@ import { Workbook } from 'exceljs';
 import * as fs from 'file-saver';
 import { useTranslation } from 'react-i18next'
 
-function GhatakTable({ data, editProject, editGhatak ,handleShow}) {
+function GhatakTable({ data, editGhatak ,handleShow , locationAvailable}) {
   const { t } = useTranslation();
 
   const [search, setSearch] = useState("");
@@ -60,6 +60,7 @@ function GhatakTable({ data, editProject, editGhatak ,handleShow}) {
     },
     {
       name: t("ghatak"),
+      omit : locationAvailable?.Block,
       selector: (row) =>
         <div className="cursor-point d-flex gap-1" >
           <span>
