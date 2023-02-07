@@ -18,6 +18,7 @@ import ToastAlert from "./components/ToastAlert";
 import { useTranslation } from 'react-i18next'
 import Ghataks from "./pages/ghataks";
 import './notFoundPage.css';
+import Location from "./pages/Location/location";
 
 // const Home = React.lazy(() => import("./pages/home"));
 const loading = (
@@ -129,13 +130,14 @@ function App(props) {
                   <Route path='/users/:cat' element={<Users />} >
                     <Route path=":type" element={<Users />} />
                   </Route>
-                  <Route path='/projects' element={<Projects toastalert={toastalert} />} />
+                  {/* <Route path='/projects' element={<Projects toastalert={toastalert} />} /> */}
                   <Route path='/ghatak' element={<Ghataks toastalert={toastalert} />} />
                   <Route path='/districts' element={<Districts />} />
                   <Route path='/sectors' element={<Sectors />} />
                   <Route path='/visits' element={<Visits navigate={props.navigate} />} />
                   <Route path='/visits/:cat' element={<Visits navigate={props.navigate} />} />
                   <Route path='/checklists/:visit_id' element={<Checklist />} />\
+                  <Route path='/projects' element={<Location navigate={props.navigate} />} />
 
                   <Route exact path='/' element={<Home />} />
                   <Route path='/home' element={<Home />} />

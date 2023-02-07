@@ -43,9 +43,9 @@ const Sidebar = () => {
           <NavLink to="/users"><img src={team} width="30"/><span>{t('user')}</span></NavLink>
         </li>
 
-        {/* <li className="nav-item">
+        <li className="nav-item">
           <NavLink to="/projects"><img src={clipboard} width="30"/><span>{t('project')}</span></NavLink>
-        </li> */}
+        </li>
 
         <li className="nav-item">
           <NavLink to="/districts"><img src={map} width="30"/><span>{t('district')}</span></NavLink>
